@@ -1,35 +1,59 @@
-.certificate-section {
-    padding: 40px;
-    max-width: 1000px;
-    margin: auto;
-  }
-  
-  .certificate-section h1 {
-    text-align: center;
-    font-size: 36px;
-    margin-bottom: 30px;
-  }
-  
-  .certificate-card {
-    background-color: #e8f1fc;
-    padding: 20px;
-    border-radius: 12px;
-    margin-bottom: 25px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  }
-  
-  .certificate-card h2 {
-    color: #0077cc;
-    font-size: 24px;
-    margin-bottom: 10px;
-  }
-  
-  .certificate-card p {
-    font-size: 18px;
-    line-height: 1.6;
-  }
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
-  /* Horizontal Top Navbar Styles */
+/* Base styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background-color: #0f172a;
+  color: #e2e8f0;
+}
+
+/* Section Layout */
+.certificate-section {
+  padding: 50px 20px;
+  max-width: 1000px;
+  margin: auto;
+  text-align: center;
+}
+
+.certificate-section h1 {
+  font-size: 36px;
+  margin-bottom: 40px;
+  color: #00ffe1;
+  text-shadow: 0 0 10px #00ffe1;
+}
+
+/* Card Styling */
+.certificate-card {
+  background-color: #1e293b;
+  padding: 25px;
+  border-radius: 12px;
+  margin-bottom: 30px;
+  box-shadow: 0 0 15px rgba(0, 255, 225, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: fadeIn 0.8s ease-in-out forwards;
+}
+
+.certificate-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 20px rgba(0, 255, 225, 0.3);
+}
+
+.certificate-card h2 {
+  color: #00ffe1;
+  font-size: 24px;
+  margin-bottom: 12px;
+  text-shadow: 0 0 5px #00ffe1;
+}
+
+.certificate-card p {
+  font-size: 16px;
+  color: #cbd5e1;
+  line-height: 1.6;
+  margin-bottom: 8px;
+}
+
+/* Navbar (already included) */
 .topnav {
   background-color: #333;
   overflow: hidden;
@@ -62,4 +86,16 @@
 
 .topnav ul li a.active {
   background-color: #04AA6D;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

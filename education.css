@@ -1,100 +1,42 @@
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f9f9f9;
-  }
-  
-  header {
-    background-color: #1e293b;
-    color: white;
-    padding: 20px 0;
-    text-align: center;
-  }
-  
-  nav {
-    margin-top: 10px;
-  }
-  
-  nav a {
-    color: #fff;
-    margin: 0 15px;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  
-  nav a:hover {
-    text-decoration: underline;
-  }
-  
-  /* General Styles */
-body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* Reset & Base */
+* {
   margin: 0;
   padding: 0;
-  background-color: #f4f4f9;
+  box-sizing: border-box;
 }
 
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #0d1117;
+  color: #c9d1d9;
+  line-height: 1.6;
+}
+
+/* Header */
 header {
-  background-color: #333;
-  color: white;
-  padding: 20px;
+  background-color: #011627;
+  color: #00ffe1;
+  padding: 25px 0;
   text-align: center;
+  text-shadow: 0 0 8px #00ffe1;
 }
 
-/* Education Section */
-.education-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding: 30px;
-  gap: 20px;
+header h1 {
+  font-size: 2rem;
+  margin-bottom: 5px;
 }
 
-/* Individual Education Card */
-.edu-card {
-  background-color: #ffffff;
-  padding: 20px;
-  width: 300px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s ease-in-out;
+header p {
+  font-size: 1.1rem;
+  color: #9ca3af;
 }
 
-.edu-card:hover {
-  transform: translateY(-5px);
-}
-
-.edu-card h2 {
-  font-size: 20px;
-  color: #2e8b57;
-  margin-bottom: 10px;
-}
-
-.edu-card p {
-  margin: 6px 0;
-  font-size: 14px;
-  color: #333;
-}
-
-.map-btn {
-  display: inline-block;
-  margin-top: 12px;
-  padding: 8px 12px;
-  background-color: #2e8b57;
-  color: white;
-  text-decoration: none;
-  border-radius: 5px;
-  font-size: 14px;
-}
-
-.map-btn:hover {
-  background-color: #246b45;
-}
-
-/* Horizontal Top Navbar Styles */
+/* Top Navigation */
 .topnav {
-  background-color: #333;
+  background-color: #1d1f21;
   overflow: hidden;
 }
 
@@ -120,9 +62,73 @@ header {
 }
 
 .topnav ul li a:hover {
-  background-color: #575757;
+  background-color: #333;
 }
 
 .topnav ul li a.active {
   background-color: #04AA6D;
+}
+
+/* Education Container */
+.education-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  padding: 40px 20px;
+}
+
+/* Education Card */
+.edu-card {
+  background-color: #1f2937;
+  color: #cbd5e1;
+  padding: 25px;
+  border-radius: 10px;
+  width: 320px;
+  box-shadow: 0 0 20px rgba(0, 255, 225, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.edu-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 30px rgba(0, 255, 225, 0.15);
+}
+
+.edu-card h2 {
+  font-size: 22px;
+  color: #00ffe1;
+  margin-bottom: 10px;
+}
+
+.edu-card p {
+  font-size: 14px;
+  margin: 5px 0;
+  color: #d1d5db;
+}
+
+/* Map Button */
+.map-btn {
+  display: inline-block;
+  margin-top: 14px;
+  padding: 10px 15px;
+  background-color: #00ffe1;
+  color: #0f172a;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.map-btn:hover {
+  background-color: #00e6cc;
+  transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+  background-color: #011627;
+  color: #9ca3af;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 0.9rem;
 }
