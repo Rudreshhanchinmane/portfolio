@@ -1,0 +1,107 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7fa;
+    color: #333;
+  }
+  
+  header {
+    background-color: #023047;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  header h1 {
+    margin: 0;
+  }
+  
+  nav {
+    margin-top: 10px;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+  }
+  
+  .about-section {
+    padding: 40px 20px;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  .about-container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .about-container h2 {
+    margin-top: 0;
+    color: #023047;
+  }
+  
+  .about-container p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  .about-container ul {
+    list-style-type: square;
+    padding-left: 20px;
+  }
+  
+  .about-container li {
+    margin-bottom: 10px;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #023047;
+    color: white;
+  }
+
+  /* Horizontal Top Navbar Styles */
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+}
+
+.topnav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+
+.topnav ul li {
+  margin: 0;
+}
+
+.topnav ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.topnav ul li a:hover {
+  background-color: #575757;
+}
+
+.topnav ul li a.active {
+  background-color: #04AA6D;
+}

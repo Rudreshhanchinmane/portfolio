@@ -1,0 +1,128 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+  }
+  
+  header {
+    background-color: #1e293b;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  nav {
+    margin-top: 10px;
+  }
+  
+  nav a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+  }
+  
+  /* General Styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Education Section */
+.education-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 30px;
+  gap: 20px;
+}
+
+/* Individual Education Card */
+.edu-card {
+  background-color: #ffffff;
+  padding: 20px;
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.edu-card:hover {
+  transform: translateY(-5px);
+}
+
+.edu-card h2 {
+  font-size: 20px;
+  color: #2e8b57;
+  margin-bottom: 10px;
+}
+
+.edu-card p {
+  margin: 6px 0;
+  font-size: 14px;
+  color: #333;
+}
+
+.map-btn {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 8px 12px;
+  background-color: #2e8b57;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.map-btn:hover {
+  background-color: #246b45;
+}
+
+/* Horizontal Top Navbar Styles */
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+}
+
+.topnav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+
+.topnav ul li {
+  margin: 0;
+}
+
+.topnav ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.topnav ul li a:hover {
+  background-color: #575757;
+}
+
+.topnav ul li a.active {
+  background-color: #04AA6D;
+}
